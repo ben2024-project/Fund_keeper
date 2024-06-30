@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block main_block%}
+
+<div class="container">
+    <h3 class="text-center fw-bold">Income Edit</h3>
+    <form action="" method="post"> 
+
+        {%csrf_token%}
+         {{form.as_p}}
+
+         <button type="submit" class="btn btn-outline-success" >Add</button>
+    </form>
+  
+</div>
+
+{%endblock%}
